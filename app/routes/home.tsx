@@ -20,7 +20,7 @@ export default function Home() {
               <h2>Review your submission and check AI-powered feedback.</h2>
           </div>
           {resumes.length > 0 && (
-              <div className="resume-section">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                   {resumes.map((resume)=>(
                       <ResumeCard key={resume.id} resume={resume}/>
                   ))}
